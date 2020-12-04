@@ -55,13 +55,13 @@ We have for instance the id of the journal in `bibliography$results$id`
 ## Getting detailed information about a journal.
 
 Once we have a journal we might be interested in more information.
-We can retrieve who administrate it, when was last updated, other bibliographic references:
+We can retrieve who publishes it, when the DOAJ record for it was last updated, and other bibliographic information relating to the journal:
 
 ```{r}
 journal <- jaod_journal(id = bibliography$result$id[1])
 ```
 
-So for intance looking at the subject `journal$bibjson$subject` we can see that
+So for instance looking at the subject `journal$bibjson$subject` we can see that
 is based on Ethnology, social and cultural antrophology.
 Or that author doesn't keep the publishing rights (`journal$bibjson$author_publishing_rights$publishing_rights`)
 
